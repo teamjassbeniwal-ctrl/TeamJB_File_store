@@ -70,8 +70,7 @@ async def gen_link_batch(bot, message):
         return await message.reply("Use correct format.\nExample /batch https://t.me/teamjb1/25 https://t.me/teamjb1/30.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample /batch https://t.me/teamjb1/25 https://t.me/teamjb1/30
-        .")
+        return await message.reply("Use correct format.\nExample /batch https://t.me/teamjb1/25 https://t.me/teamjb1/30.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -146,6 +145,7 @@ async def gen_link_batch(bot, message):
     else:
         await sts.edit(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\nContains `{og_msg}` files.\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
         
+
 
 
 
