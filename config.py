@@ -13,11 +13,11 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "25331263"))
-API_HASH = environ.get("API_HASH", "cab85305bf85125a2ac053210bcd1030")
+API_ID = int(environ.get("API_ID", "31212516"))
+API_HASH = environ.get("API_HASH", "ccc20df465364045538da8ecf8954992")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://ibb.co/3m0LDXp1')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1955406483').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "YouTubeVideoDownloadYT_bot") # without @
 PORT = environ.get("PORT", "8080")
@@ -41,7 +41,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003600438841"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001925121665"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
