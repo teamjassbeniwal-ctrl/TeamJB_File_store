@@ -17,10 +17,10 @@ API_ID = int(environ.get("API_ID", "31212516"))
 API_HASH = environ.get("API_HASH", "ccc20df465364045538da8ecf8954992")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://ibb.co/3m0LDXp1')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://i.ibb.co/zVS0ycXs/1767001627211.png')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6645288126').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "YouTubeVideoDownloadYT_bot") # without @
-PORT = environ.get("PORT", "8080")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Dennypyrofind_bot") # without @
+PORT = int(environ.get("PORT", "8080"))
 
 # Clone Info :-
 CLONE_MODE = is_enabled(environ.get('CLONE_MODE', "True"), True)# Set True or False
